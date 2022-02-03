@@ -12,10 +12,22 @@
 
 .nav-aside > li,
 .nav-simple > li {
-  a {
+  border: none;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  font-size: @font-size-slightly-smaller-base;
+
+  > a,
+  .module-narrow & > a {
     color: @facet-link-text-color;
     text-decoration: none;
     margin: 0;
+    padding-top: @padding-y__navigation;
+    padding-bottom: @padding-y__navigation;
+    padding-left: @padding-x__navigation;
+    padding-right: @padding-x__navigation;
 
     &:hover {
       text-decoration: none;
@@ -27,22 +39,13 @@
     background-color: @background-color--highlight;
   }
 
-  width: 100%;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: @padding-y__navigation;
-  padding-bottom: @padding-y__navigation;
-  padding-left: @padding-x__navigation;
-  padding-right: 0;
-  border-style: none none none solid;
-  border-left: none;
-  font-size: 13px;
-
   &.active {
-    a {
+    > a {
       background-color: transparent;
       color: @facet-link-text-color;
       font-weight: @font-weight-heavier;
+      border-left: @border-width__navigation solid @sidebar-block-color-header;
+      padding-left: @padding-x__navigation - @border-width__navigation;
 
       &:hover {
         background-color: transparent;
@@ -50,9 +53,6 @@
       }
     }
 
-    color: #219ad3;
-    border-left: 4px solid @sidebar-block-color-header;
-    padding-left: @padding-x__navigation - @border-width__navigation;
     background-color: @background-color--highlight;
   }
 }
@@ -61,11 +61,6 @@
 //it shouldn't be blue
 .resources .nav-simple > li.active {
   color: @facet-link-text-color;
-}
-
-.module-narrow .nav-aside li a,
-.module-narrow .nav-item > a {
-  padding: 0;
 }
 
 .navbar-default {

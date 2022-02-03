@@ -33,7 +33,7 @@
     padding-left: @padding-left__nav--guide;
 
     .nav__item {
-      .nav__item__link {
+      > .nav__item__link {
         display: block;
         padding: @padding__nav__item__link--guide;
         font-size: @font-size-base;
@@ -49,7 +49,7 @@
         content: counter(guide-nav) ".";
         color: @opendata-brand-primary;
         position: absolute;
-        top: @padding__nav__item__link--guide;
+        top: @padding-y__nav__item__link--guide;
         left: -@padding-left__nav--guide;
       }
 
@@ -82,8 +82,28 @@
       margin: 0;
       padding-left: @padding-left__subnav--guide;
 
-      .nav__item__link {
-        font-size: @font-size-slightly-smaller-base;
+      .nav__item {
+        padding: @padding__nav__item__link--guide;
+
+        .nav__item__link {
+          font-size: @font-size-slightly-smaller-base;
+          padding: 0;
+
+          &.active--subnav-link {
+            font-weight: @font-weight-heavier;
+            position: relative;
+
+            &::before {
+              content: ' ';
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: -@padding-x__nav__item__link--guide - @padding-left__subnav--guide;
+              width: 4px;
+              background-color: @opendata-brand-primary;
+            }
+          }
+        }
       }
     }
   }

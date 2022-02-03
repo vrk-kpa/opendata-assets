@@ -176,3 +176,31 @@ a.external {
     margin-top: 0;
   }
 }
+
+table {
+  border-collapse: collapse;
+  text-align: left;
+
+  caption {
+    color: @color--dark-black;
+    font-weight: @font-weight-heavier;
+    text-align: left;
+    padding: @padding-y__table-caption @padding-x__table-caption;
+  }
+
+  th,
+  td {
+    padding: @padding-y__table-cell @padding-x__table-cell;
+    border: 1px solid @table-border-color;
+  }
+
+  th {
+    background-color: @table-bg-accent;
+    color: @color--dark-black;
+    font-weight: @font-weight-heavier;
+  }
+
+  td {
+    color: @color--black;
+  }
+}

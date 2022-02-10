@@ -1042,6 +1042,13 @@ p:last-child,
   overflow-wrap: break-word;
   hyphens: auto;
 
+  &::before,
+  &::after {
+    content: ' ';
+    display: block;
+    clear: both;
+  }
+
   .row {
     margin: 0;
   }

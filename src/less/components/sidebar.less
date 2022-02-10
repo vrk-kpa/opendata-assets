@@ -66,10 +66,11 @@ aside.tertiary {
         margin: 0 (-@padding-x__navigation);
         padding: @padding-y--common @padding-x__navigation;
         color: @sidebar-block-color-text;
-        border-left: 8px solid @sidebar-block-color-background;
+        border-left: @border-width__navigation solid transparent;
 
-        &:hover {
-          border-left: 8px solid @sidebar-block-color-header;
+        &:hover,
+        &.nav-link-selected {
+          border-left: @border-width__navigation solid @sidebar-block-color-header;
         }
       }
     }

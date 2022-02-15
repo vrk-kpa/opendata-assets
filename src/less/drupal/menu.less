@@ -8,6 +8,10 @@
     border-top: none;
     background: transparent;
     padding-top: 0;
+
+    .opendata-card-content {
+      margin-top: 0;
+    }
   }
 
   .menu-heading {
@@ -16,6 +20,10 @@
     color: @opendata-brand-primary;
     position: relative;
     padding-left: @padding-left__nav--guide;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: @padding-y__nav__item__link--guide;
+    padding-bottom: @padding-y__nav__item__link--guide;
 
     &::before {
       content: "\f111";
@@ -48,6 +56,7 @@
       display: block;
       position: relative;
       counter-increment: guide-nav;
+      margin: 5px 0;
 
       &::before {
         content: counter(guide-nav) ".";
@@ -55,6 +64,11 @@
         position: absolute;
         top: @padding-y__nav__item__link--guide;
         left: -@padding-left__nav--guide;
+      }
+
+      > .nav__item__link:not(.active):hover {
+        background: none;
+        text-decoration: underline;
       }
 
       > .nav__item__link.active {
@@ -66,6 +80,11 @@
       }
 
       &.open {
+        &:not(:first-of-type),
+        & + .nav__item {
+          margin-top: 15px;
+        }
+
         a {
           position: relative;
 
@@ -85,6 +104,7 @@
       background-color: @background-color__submenu;
       margin: 0;
       padding-left: @padding-left__subnav--guide;
+      border-radius: @border-radius__subnav;
 
       .nav__item {
         padding: @padding__nav__item__link--guide;

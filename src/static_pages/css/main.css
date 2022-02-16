@@ -1,24 +1,86 @@
-body{
+body {
 	margin: 0;
-	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
-	font-size: 14px;
+	font-family: "Source Sans Pro", "Helvetica Neue", "Arial", "sans-serif";
+	font-size: 18px;
 	line-height: 1.428571429;
-	background: inline('../../../resources/images/avoindata_page_not_found.jpg') no-repeat;
-  background-size:cover;
-  background-position:center;
-	padding-top: 64px;
+	background-color: #fafafa;
+	color: #222222;
 }
 
-#heading{
-	background-color: #333333;
-	position: fixed;
+h1 {
+	font-size: 40px;
+	font-weight: 300;
+	line-height: 48px;
+	margin-bottom: 40px;
+}
+
+h2 {
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 34px;
+}
+
+p {
+	margin-bottom: 10px;
+}
+
+.header {
+	background-color: #fff;
+	border-bottom: 1px solid #c8cdd0;
+	position: sticky;
 	top: 0;
-	min-height: 40px;
+	min-height: 80px;
 	width: 100%;
 	padding: 0;
+	margin-bottom: 70px;
+	display: flex;
+	align-items: center;
 }
 
-#heading > div {
+.header .container {
+	display: flex;
+	justify-content: flex-start;
+	align-content: center;
+}
+
+.header a {
+	font-size: 40px;
+	line-height: 40px;
+	color: #222;
+}
+
+.header img {
+	width: auto;
+	height: 22px;
+}
+
+#logo {
+	height: 40px;
+	width: auto;
+}
+
+.container {
+    max-width: 800px;
+    min-width: 480px;
+    width: 90%;
+	margin: 0 auto;
+}
+
+a {
+	color: #2a6ebb;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #2a6ebb;
+	text-decoration: underline;
+}
+
+.instructions {
+	margin-top: 40px;
+}
+
+/* #heading > div {
 	padding-left: 50px;
 	margin-left: auto;
 	margin-right: auto
@@ -75,4 +137,4 @@ body{
 	background-color: #cbe7ff;
 	padding: 20px;
     border-radius: 20px;
-}
+} */

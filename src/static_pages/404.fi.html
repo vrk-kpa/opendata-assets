@@ -1,29 +1,81 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Avoindata.fi</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<div id="heading">
-    <div>
-        <a href="/fi">AVOINDATA.FI</a>
-    </div>
-</div>
-<div class="container">
-  <div id="content">
-      <h1 >Sivua ei löytynyt</h1>
-      <p>
-          Sivua ei valitettavasti löytynyt.
-      </p>
-      <p>
-      Tarkista, että kirjoittamasi osoite on oikein.<br>
-      Siirry palvelun <a href="/fi">etusivulle</a> ja etsi haluamasi sivu käyttäen hakua tai sivukarttaa.<br>
-      Ongelmatilanteissa voit myös lähettää <a href="/fi/contact">palautetta.</a>
-      </p>
-  </div>
+    <head>
+        <title>Avoindata.fi</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <style data-embed>
+            @font-face {
+                font-family: 'Source Sans Pro';
+                font-style: normal;
+                font-weight: 300;
+                font-display: block; /* or auto, swap, fallback, optional */
+                src: url('/resources/fonts/source-sans-pro-v13-latin-300.eot'); /* IE9 Compat Modes */
+                src:
+                    local('Source Sans Pro Light'), local('SourceSansPro-Light'),
+                    url('/resources/fonts/source-sans-pro-v13-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                    url('/resources/fonts/source-sans-pro-v13-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+                    url('/resources/fonts/source-sans-pro-v13-latin-300.woff') format('woff'), /* Modern Browsers */
+                    url('/resources/fonts/source-sans-pro-v13-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+                    url('/resources/fonts/source-sans-pro-v13-latin-300.svg#SourceSansPro') format('svg'); /* Legacy iOS */
+            }
 
-</div>
-</body>
+            @font-face {
+                font-family: 'Source Sans Pro';
+                font-style: normal;
+                font-weight: 400;
+                font-display: block; /* or auto, swap, fallback, optional */
+                src: url('/resources/fonts/source-sans-pro-v13-latin-regular.eot'); /* IE9 Compat Modes */
+                src:
+                    local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
+                    url('/resources/fonts/source-sans-pro-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                    url('/resources/fonts/source-sans-pro-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+                    url('/resources/fonts/source-sans-pro-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
+                    url('/resources/fonts/source-sans-pro-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+                    url('/resources/fonts/source-sans-pro-v13-latin-regular.svg#SourceSansPro') format('svg'); /* Legacy iOS */
+            }
+
+            @font-face {
+                font-family: 'Source Sans Pro';
+                font-style: normal;
+                font-weight: 600;
+                font-display: block; /* or auto, swap, fallback, optional */
+                src: url('/resources/fonts/source-sans-pro-v13-latin-600.eot'); /* IE9 Compat Modes */
+                src:
+                    local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'),
+                    url('/resources/fonts/source-sans-pro-v13-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                    url('/resources/fonts/source-sans-pro-v13-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+                    url('/resources/fonts/source-sans-pro-v13-latin-600.woff') format('woff'), /* Modern Browsers */
+                    url('/resources/fonts/source-sans-pro-v13-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+                    url('/resources/fonts/source-sans-pro-v13-latin-600.svg#SourceSansPro') format('svg'); /* Legacy iOS */
+            }
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <a href="/fi">
+                    <img src="/resources/images/logo.png" />
+                </a>
+            </div>
+        </header>
+        <div class="container">
+            <h1>Pahoittelut, sivua ei löytynyt</h1>
+            <div class="instructions">
+                <h2>Sivua ei löytynyt</h2>
+                <p>Etsimääsi sivua ei valitettavasti löytynyt. Tätä sivua ei ole saatavilla tai sivun osoite on muuttunut. Tarkistathan, että kirjoittamasi osoite on oikein.</p>
+                <a href="/fi">Siirry etusivulle</a>
+            </div>
+            <div class="instructions">
+                <h2>Sidan kunde inte hittas</h2>
+                <p>Sidan som du sökte kunde tyvärr inte hittas. Den här sidan finns inte eller sidan har flyttats. Vänligen kontrollera att adressen är korrekt.</p>
+                <a href="/sv">Gå till startsidan</a>
+            </div>
+            <div class="instructions">
+                <h2>Page was not found</h2>
+                <p>The page you were looking for could not be found. This page is not available or the page has moved. Please make sure that the address is spelled correctly.</p>
+                <a href="/en">Go to the home page</a>
+            </div>
+        </div>
+    </body>
 </html>

@@ -1,16 +1,19 @@
 @import "../../../src/less/variables";
 
 .avoindata-expander {
-  background: white;
+  background: @background-color__expander;
   border-radius: 2px;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
-  margin: 3px;
-  transition: margin 700ms;
+  box-shadow: 0px 2px 4px 1px @box-shadow-color__expander;
+  border: 1px solid @border-color__expander;
+  margin: 0;
+
+  & + .avoindata-expander {
+    margin-top: -1px;
+  }
 }
 
 .avoindata-expander.open {
-  background: rgb(246, 249, 252);
-  margin: 15px 3px;
+  background: @background-color__expander--open;
 }
 
 .avoindata-expander-header {
@@ -40,6 +43,13 @@
   line-height: 27px;
 }
 
+.avoindata-expander.open {
+  .avoindata-expander-content,
+  .avoindata-expander-content.collapse {
+    display: block;
+  }
+}
+
 .avoindata-expander-header .icon-wrapper {
   float: right;
   padding-right: 20px;
@@ -54,6 +64,7 @@
   text-decoration: none;
   color: @new-layout-secondary-text-color;
   cursor: pointer;
+  margin-bottom: @padding-y--small;
 }
 
 .avoindata-note-header-image {
@@ -178,6 +189,7 @@ a.external {
 
   .avoindata-section__title {
     margin-top: 0;
+    margin-bottom: @margin-bottom__section__title;
   }
 }
 

@@ -43,7 +43,7 @@
 }
 
 .showcase-list {
-  background-color: @background-color__content;
+  background-color: transparent;
   // @NOTE: These should be same as @grid-gutter-width / 2 but because bootstrap isn't compiled from less sources
   // with overwritten customized variables these are partly hardcoded now.
   width: auto;
@@ -116,8 +116,6 @@
   border: 1px solid @border-color__content;
   padding: @padding__content;
   position: relative;
-  // @NOTE: Hardcoded 15px as that matches with bootstraps @grid-gutter-width which couldn't be replaced
-  margin: 0 15px;
   overflow-wrap: break-word;
   hyphens: auto;
 

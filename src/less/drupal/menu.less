@@ -40,9 +40,20 @@
     }
   }
 
+  .menu--counter .nav {
+    counter-reset: guide-nav;
+
+    > .nav__item::before {
+      content: counter(guide-nav) ".";
+      color: @opendata-brand-primary;
+      position: absolute;
+      top: @padding-y__nav__item__link--guide;
+      left: -@padding-left__nav--guide;
+    }
+  }
+
   .nav {
     list-style: none;
-    counter-reset: guide-nav;
     padding: @padding__nav--guide;
     padding-left: @padding-left__nav--guide;
 
@@ -59,14 +70,6 @@
       position: relative;
       counter-increment: guide-nav;
       margin: 5px 0;
-
-      &::before {
-        content: counter(guide-nav) ".";
-        color: @opendata-brand-primary;
-        position: absolute;
-        top: @padding-y__nav__item__link--guide;
-        left: -@padding-left__nav--guide;
-      }
 
       > .nav__item__link:not(.active):hover {
         background: none;

@@ -184,9 +184,10 @@ label.group-label {
   .search-header {
     border: 1px solid @suomi-depthLight13;
     border-bottom: 0;
-    padding: 20px;
+    padding: @padding-y--common;
     display: flex;
     background-color: @background-color__content;
+    margin-top: @padding-y--common;
   }
 
   .search-result-count {
@@ -883,5 +884,11 @@ td.selectable-row {
 .form-group {
   .input-group-addon {
     border-radius: 0;
+  }
+}
+
+.dataset-form {
+  .page-container {
+    margin-top: 0;
   }
 }

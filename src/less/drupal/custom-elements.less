@@ -98,6 +98,10 @@
   margin-inline-start: 0;
   margin-inline-end: 0;
   display: inline-block;
+
+  > *:last-child {
+    margin: 0;
+  }
 }
 
 .avoindata-note-content {
@@ -159,6 +163,10 @@
   margin-inline-start: 0;
   margin-inline-end: 0;
   display: inline-block;
+
+  > *:last-child {
+    margin: 0;
+  }
 }
 
 .avoindata-example-content {
@@ -195,6 +203,7 @@ a.external {
   .avoindata-section__title {
     margin-top: 0;
     margin-bottom: @margin-bottom__section__title;
+    font-size: @font-size__section-title;
   }
 }
 

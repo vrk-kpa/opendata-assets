@@ -52,6 +52,18 @@
   overflow: inherit;
   display: flex;
   flex-direction: column-reverse;
+
+  .btn {
+    align-self: flex-end;
+
+    &.btn-danger {
+      align-self: flex-start;
+    }
+  }
+
+  .control-required-message {
+    align-self: flex-start;
+  }
 }
 
 label.control-label,

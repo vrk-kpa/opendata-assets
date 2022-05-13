@@ -1,7 +1,47 @@
 .module-resource {
+  border: none;
+  margin-bottom: @margin__module;
+
+  // Additional padding for desktop only
+  @media (min-width: @screen-sm-min) {
+    padding-left: @padding-left__module--resource;
+    padding-right: @padding-right__module--resource;
+  }
+  
   .actions {
     top: 0;
     right: 0;
+  }
+}
+
+.resource-container {
+  background-color: @background-color__content;
+  border: 1px solid @border-color__content;
+  padding: @padding__content;
+
+  > .row {
+    margin-left: -@padding-x--common;
+    margin-right: -@padding-x--common;
+  }
+
+  .resource-primary-content,
+  .resource-sidebar {
+    padding: 0 @padding-x--common;
+
+    .embedded-content {
+      font-size: @font-size-base;
+    }
+
+    .embedded-content,
+    .resources,
+    .additional-info,
+    .disqus-comments {
+      margin-bottom: @margin__module--large;
+
+      h3 {
+        margin-bottom: @padding-y--common;
+      }
+    }
   }
 }
 

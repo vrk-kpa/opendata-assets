@@ -13,6 +13,7 @@
 .nav-aside > li,
 .nav-simple > li {
   border: none;
+  border-bottom: 1px solid @suomi-depthSecondary;
   width: 100%;
   margin-top: 0;
   margin-bottom: 0;
@@ -21,7 +22,7 @@
 
   > a,
   .module-narrow & > a {
-    color: @facet-link-text-color;
+    color: @opendata-brand-primary;
     text-decoration: none;
     margin: 0;
     padding-top: @padding-y__navigation;
@@ -42,14 +43,14 @@
   &.active {
     > a {
       background-color: transparent;
-      color: @facet-link-text-color;
+      color: @opendata-brand-primary;
       font-weight: @font-weight-heavier;
       border-left: @border-width__navigation solid @sidebar-block-color-header;
       padding-left: @padding-x__navigation - @border-width__navigation;
 
       &:hover {
         background-color: transparent;
-        color: @facet-link-text-color;
+        color: @opendata-brand-primary;
       }
     }
 

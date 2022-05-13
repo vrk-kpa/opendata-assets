@@ -4,6 +4,18 @@
   height: auto;
   border-radius: @border-radius__button;
   padding: @padding-y__button @padding-x__button;
+  
+  &.btn-outline-primary {
+    background: transparent;
+    border-width: 1px;
+    border-color: @opendata-brand-primary;
+    color: @opendata-brand-primary;
+
+    &:hover {
+      border-color: @opendata-brand-primary--highlight;
+      color: @opendata-brand-primary--highlight;
+    }
+  }
 }
 
 .btn-light {

@@ -1,4 +1,5 @@
 @import "../variables";
+@import "../variables/fonts";
 
 // ------------------
 // Main layout styles
@@ -314,4 +315,37 @@ body {
 
 .module-content {
   padding: 0 15px;
+}
+
+
+.prelude{
+  .admin-banner {
+    margin-top: 20px;
+    a {
+      margin: 0;
+    }
+
+    a + a {
+      margin-left: 10px;
+    }
+  }
+
+  .nav.nav-tabs{
+    li {
+      a {
+        font-family: @font-family-sans-serif;
+        font-weight: normal;
+        font-size: 18px;
+      }
+
+      &.active,
+      &:hover {
+        a {
+          border: none;
+          background-color: inherit;
+          border-bottom: 5px solid @border-bottom-color__main-nav--active
+        }
+      }
+    }
+  }
 }

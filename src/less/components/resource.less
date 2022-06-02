@@ -1,29 +1,27 @@
 .toolbar-secondary-wrapper{
-  padding-bottom: 10px;
+  padding-bottom: @padding-y__resource_toolbar;
 }
 
 .toolbar-resource-secondary{
   max-width: 1110px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 @padding-right__module--resource;
 
   i{
     border-radius: 0px;
     height: 16px;
     width: 16px;
-    color: #2a6ebb;
+    color: @suomi-highlightBase;
   }
 
   a{
-    color: rgb(42, 110, 187);
+    color: @suomi-highlightBase;
     font-family: @font-family-sans-serif;
-    font-size: 14px;
-    font-weight: normal;
-    height: 18px;
+    font-size: @font-size-smaller-base;
+    font-weight: @font-weight-normal;
     letter-spacing: 0.4px;
-    line-height: 18px;
+    line-height: @line-height-larger-base;
     text-transform: uppercase;
-    width: 96px;
   }
 }
 
@@ -53,13 +51,13 @@
   }
 
   .module-small-title{
-    height: 24px;
-    color: rgb(95, 104, 109);
-    font-size: 16px;
+    // height: 24px;
+    color: @suomi-depthDark27;
+    font-size: @font-size-slightly-smaller-base;
     font-family: @font-family-sans-serif; 
-    font-weight: normal;
-    line-height: 24px;
-    padding-top: 10px;
+    font-weight: @font-weight-normal;
+    line-height: @line-height-base;
+    padding-top: @padding-y__resource_toolbar;
   }
 
   .resource-module-table{
@@ -68,28 +66,27 @@
 
   .resource-module-table th{
     text-align: left;
-    padding: 8px;
-    font-size: 16px;
+    padding: @padding__resource_table;
+    font-size: @font-size-slightly-smaller-base;
   }
 
   .resource-module-table td, .resource-module-table tr{
-    border: 1px solid #ddd;
-    padding: 8px;
+    border: 1px solid @suomi-depthLight13;
+    padding: @padding__resource_table;
+    border-collapse: collapse;
   }
 
   .resource-module-table tr:nth-child(odd){
-    background-color: #f2f2f2;
+    background-color: @suomi-depthLight30;
   }
 
   .resource-module-table th{
-    font-weight: 300; 
-    /* font-weight: @font-weight-light;  */
-    font-size: 16px;
+    font-weight: @font-weight-light; 
+    font-size: @font-size-slightly-smaller-base;
   }
 
   .resource-module-table th:nth-child(odd){
-    font-weight: 600;
-    /* font-weight: @font-weight-heavier; */
+    font-weight: @font-weight-heavier;
   }
 }
 
@@ -128,29 +125,25 @@
   border: 1px solid @color--extra-light-grey;
 
   .resource-block{
-    padding-bottom: 20px;
+    padding-bottom: @padding-bottom__module--resource;
   }
 
   .module {
     h1 {
-      margin-bottom: 20px !important;
+      margin-bottom: @padding-bottom__module--resource !important;
       color: @navbarInverseBackgroundHighlight !important;
-      //font-family: @font-family-sans-serif !important;
       font-family: @font-family-sans-serif-light !important;
-      font-size: 40px;
-      //font-size: @font-size__module-h1;
-      //font-weight: @font-weight-heavier;
+      font-size: @font-size__module-large-h1;
       font-weight: @font-weight-light;
     }
   }
 }
 
 .apiset-title {
-  color: rgb(34, 34, 34);
-  font-size: 40px;
-  font-weight: 300;
+  color: @color--dark-black;
+  font-size: @font-size__module-large-h1;
+  font-weight: @font-weight-light;
   height: 48px;
-  line-height: 48px;
   margin: 0 0 3px;
 }
 

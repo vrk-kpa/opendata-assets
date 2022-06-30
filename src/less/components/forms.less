@@ -60,9 +60,20 @@
       align-self: flex-start;
     }
   }
+}
 
-  .control-required-message {
-    align-self: flex-start;
+.control-required-message {
+  align-self: flex-start;
+  font-size: @font-size-slightly-smaller-base;
+  color: @suomi-depthDark27;
+
+  span.control-required,
+  .control-required {
+    &,
+    .page-container & {
+      float: none;
+      color: inherit;
+    }
   }
 }
 
@@ -700,6 +711,7 @@ label.control-label {
   .form-actions {
     flex-direction: row;
     justify-content: start;
+    align-items: center;
 
     .suomifi-button-primary {
       margin-left: auto;
@@ -707,6 +719,19 @@ label.control-label {
 
     .suomifi-button-secondary {
       margin-right: 20px;
+    }
+
+    .form-actions__delete {
+      font-family: @font-family-sans-serif-semibold;
+      font-weight: @font-weight-heavier;
+      padding: @padding-y__button @padding-x__button;
+    }
+    
+    .form-actions__delete,
+    .form-actions__save,
+    .form-actions__close {
+      margin-left: (@grid-gutter-width--bootstrap / 4);
+      margin-right: (@grid-gutter-width--bootstrap / 4);
     }
   }
 
@@ -904,8 +929,19 @@ td.selectable-row {
   }
 }
 
-.dataset-form {
+.dataset-form,
+.group-form {
   .page-container {
     margin-top: 0;
+  }
+}
+
+.slug-preview--custom {
+  margin-top: 0;
+  margin-left: 0;
+  margin-bottom: @grid-gutter-width--bootstrap / 2;
+
+  .slug-preview-value {
+    background-color: @suomi-accentSecondaryLight40;
   }
 }
